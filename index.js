@@ -1,4 +1,4 @@
-// created the Stack class for making a stack of items with diverse methods of interacing it;
+// created the Stack class for making a stack of items with diverse methods of interacting it;
 class Stack {
     constructor(maxLength = 10) {
         if (typeof maxLength !== 'number') {
@@ -31,9 +31,7 @@ class Stack {
     }
     
     isEmpty() {
-        if (this.stack.length) {
-            return false;
-        } else return true;
+        return !(this.stack.length);
     }
    
     toArray() {
